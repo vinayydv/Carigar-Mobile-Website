@@ -1,0 +1,34 @@
+<style>
+.wrapper { position: relative; }
+
+.control:focus ~ .floating-label,
+.control:not(:focus):valid ~ .floating-label{
+  top: 6px;
+  left: 5px;
+  font-size: 11px;
+  opacity: 0.6;color:blue
+}
+
+.control {
+  font-size: 14px;
+  width: 100%;
+  height: 60px;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 14px;
+  transition: 0.3s ease all;
+}
+</style>
+
+<div class="wrapper">
+  <input type="text" class="control" required/>
+  <span class="floating-label">First Name</span>
+</div>
+<div class="wrapper">
+  <input type="text" class="control" required/>
+  <span class="floating-label">Last Name</span>
+</div>

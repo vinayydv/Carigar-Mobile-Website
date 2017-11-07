@@ -1,0 +1,36 @@
+<style>
+
+    
+    .cart
+    {
+        
+        background-color: #00E676;
+    }
+    .cartclicked
+    {
+        background-color: red; 
+    }
+
+
+</style>
+
+
+
+<body>
+
+
+<input type="submit" class="cart" value="ADD TO CART" id="play" onclick="flip()">    
+<input type="submit" class="cart" value="ADD TO CART" id="play" onclick="flip()">
+
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">    </script>
+    <script>
+    function flip() {
+    $('.cart').toggleClass('cartclicked');
+      
+    }        
+</script>
+    
+
+</body>
